@@ -1,0 +1,11 @@
+name: IskalliaUhcUtils
+main: nl.thedutchmc.IskalliaUhcUtils.IskalliaUhcUtils
+version: 1.0.0
+api-version: 1.15
+author: [TheDutchMC]
+description: Tools for Iskallia UHCs
+commands:
+ arena:
+  description: Toggle the arena anti block breaking features, requires OP
+ spec:
+  description: Toggle spectator chat, requires OP

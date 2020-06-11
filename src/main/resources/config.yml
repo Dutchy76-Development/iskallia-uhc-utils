@@ -1,0 +1,6 @@
+messenger: true
+messengerInterval: 20
+messages:
+ - "&7Hello $1{TEST}"
+ - "&aTest $2{https://google.com}"
+ - "&bMight not work"
