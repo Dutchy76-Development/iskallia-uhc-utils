@@ -1,0 +1,49 @@
+plugins {
+	id 'java'
+	id 'eclipse'
+}
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+version '2.0'
+
+repositories {
+    jcenter()
+    mavenCentral()
+    mavenLocal()
+    
+    maven {
+	url "https://hub.spigotmc.org/nexus/content/repositories/snapshots"
+    }
+    
+    maven {
+	url "https://oss.sonatype.org/content/repositories/snapshots"
+    }
+
+    //uhccore
+    maven {
+        url "https://jitpack.io"
+    }
+
+  	//Repos for UhcPlus
+	maven {
+		url "https://maven.enginehub.org/repo/"
+	}
+	
+	maven {
+		name 'papermc'
+		url 'https://papermc.io/repo/repository/maven-public/'
+	}
+}
+
+dependencies {
+
+	compileOnly 'com.github.Mezy:UhcCore:v1.16'
+	compileOnly 'org.spigotmc:spigot-api:1.16.1-R0.1-SNAPSHOT'
+	
+	//MavenLocal
+	compileOnly 'nl.thedutchmc:uhcplus:0.4-BETA'
+
+
+}

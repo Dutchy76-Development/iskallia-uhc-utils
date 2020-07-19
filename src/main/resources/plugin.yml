@@ -1,0 +1,30 @@
+name: IskalliaUhcUtils
+main: nl.thedutchmc.iskalliaUhcUtils.IskalliaUhcUtils
+version: 2.0
+api-version: 1.16
+author: [TheDutchMC]
+softdepend: [UhcCore, UhcPlus]
+commands:
+ specoverride:
+  description: Allows the user to override spectator chat
+ arena:
+  description: Manually toggle the deathmatch arena
+ reloadconfig:
+  description: Reload the configuration from disk
+permissions:
+ iuu.*:
+  description: Grants access to all IskalliaUhcUtils features
+  default: op
+  children:
+   iuu.specoverride: true
+   iuu.arena: true
+   iuu.reloadconfig: true
+ iuu.specoverride:
+  description: Allows the user to use /specoverride
+  default: op
+ iuu.arena:
+  description: Allows the user to use /arena
+  default: op
+ iuu.reloadconfig:
+  description: Allows the user to use /reloadconfig
+  default: op

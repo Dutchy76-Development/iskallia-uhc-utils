@@ -1,0 +1,5 @@
+#Should the Spectator chat system be used. Default: true
+spectatorChatEnabled: "true"
+
+#Should the Arena system be used. Default: true
+arenaSystemEnabled: "true"
